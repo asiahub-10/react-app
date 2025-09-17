@@ -1,12 +1,13 @@
-import Card from "./Card"
+import Event from "./Event"
 import Footer from "./Footer"
 import Header from "./Header"
+import PropsPage from "./PropsPage"
 
 function App(){
   return (
     <>
       <Header />
-      <Card />
+      <PropsPage />
       <Footer />
     </>
   )
