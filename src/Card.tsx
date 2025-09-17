@@ -15,7 +15,7 @@ function Card() {
             <div id="card" style={card}>
                 <img src={Icon} alt="" />
                 <img src="https://placehold.co/100x100" alt="" />
-                <h3 >User Name</h3>
+                <h3 >New Name</h3>
                 <h5>Designation</h5>
                 <SocialLink />
             </div>
