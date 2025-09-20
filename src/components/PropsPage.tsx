@@ -1,4 +1,5 @@
-import PropsChild from "./PropsChild"
+import PropsChild from "./PropsChild";
+import Data from "../data.json";
 
 function PropsPage() {
     const user1 = { name: "Tanjila", email:"tanjila@com", round:65 }
@@ -17,8 +18,19 @@ function PropsPage() {
                     {/* <PropsChild {...user2} /> */}
                 </div>
             </div>
+            <h3>Loop</h3>
+            <div className="row g-3">
+                {
+                   Data.map((item)=>
+                    <div key={item.id} className="col-lg-4">
+                        {/* <PropsChild {...item} /> */}
+                        <PropsChild name={item.name} email={item.email} round={item.round} />                        
+                    </div>
+                    ) 
+                }
+            </div>
         </div>
     )
 }
 
-export default PropsPage
+export default PropsPage;

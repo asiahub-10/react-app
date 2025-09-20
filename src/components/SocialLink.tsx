@@ -1,4 +1,4 @@
-function SocialLink() {
+export function SocialLink() {
     return (
         <>
             <button className="btn btn-outline-primary">Facebook</button>
@@ -8,4 +8,4 @@ function SocialLink() {
     )
 }
 
-export default SocialLink
+// export default SocialLink

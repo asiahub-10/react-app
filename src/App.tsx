@@ -1,14 +1,19 @@
-import Event from "./Event"
-import Footer from "./Footer"
-import Header from "./Header"
-import PropsPage from "./PropsPage"
+import Event from "./components/Event";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Loop from "./components/Loop";
+import PropsPage from "./components/PropsPage";
+import UseState from "./components/UseState";
+import Users from "./data.json";
 
 function App(){
   return (
     <>
-      <Header />
+      {/* <Header />
       <PropsPage />
-      <Footer />
+      <Loop/>
+      <Footer /> */}
+      <UseState/>
     </>
   )
 }
