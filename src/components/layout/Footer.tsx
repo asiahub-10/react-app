@@ -1,10 +1,10 @@
 function Footer() {
     return (
         <>
-            <div>
+            <footer>
                 <hr />
                 <small>Copyright &copy; {new Date().getFullYear()}. All rights reserved.</small>
-            </div>
+            </footer>
         </>
     )
 }

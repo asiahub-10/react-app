@@ -1,11 +1,17 @@
 // import { baselink } from "./Config";
 // import Demo from "./Config";
 // import {SocialLink} from "./SocialLink";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Header from "./layout/Header";
+import Footer from "./layout/Footer";
 
 function UseState() {
   // let like = 0;
   const [like, setLike] = useState(0);
+  useEffect(()=>{
+    console.log("UseState is working");
+  },[like]);
+
   return (
     <>
       <div className="container text-center">
